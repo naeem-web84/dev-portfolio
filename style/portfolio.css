@@ -12,6 +12,12 @@
 
 
 /* shared style */
+
+.secondary-bg{
+background-color: #FFF8F3;
+}
+
+
 .primary-style{
     color: #FD6E0A;
 }
@@ -66,6 +72,20 @@ nav li a{
     text-decoration: none;
     font-size: 18px;
 }
+
+
+/* section design */
+.section-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section-description{
+    font-size: 15px;
+    color: #0d0c0c;
+}
+
 
 
 
@@ -170,4 +190,35 @@ nav li a{
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure image fits within dimensions */
     border-radius: 10px; /* Optional: add rounded corners for aesthetics */
+}
+
+
+/* main style */
+main{
+    max-width: 866px;
+margin: 0 auto;
+}
+
+/* about style */
+.about{
+    border-radius: 10px;
+    padding: 99px 114px;
+    text-align: center;
+    margin-top: 99px;
+}
+
+
+.about-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-item{
+    margin-bottom: 1px
+    ;
+}
+
+.item-description{
+    font-weight: 456px;
 }
