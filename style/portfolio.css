@@ -2,27 +2,27 @@
 // <weight>: Use a value from 300 to 800 */
 
 .open-sans-normal {
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
 
 /* shared style */
 
-.secondary-bg{
-background-color: #FFF8F3;
+.secondary-bg {
+    background-color: #FFF8F3;
 }
 
 
-.primary-style{
+.primary-style {
     color: #FD6E0A;
 }
 
-.dark-2{
+.dark-2 {
     color: #474747;
 }
 
@@ -37,7 +37,7 @@ background-color: #FFF8F3;
 }
 
 /* Header style */
-.header{
+.header {
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
@@ -45,14 +45,14 @@ background-color: #FFF8F3;
 
 
 /* nav style */
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 152px;
 }
 
-.nav-title{
+.nav-title {
     font-weight: 608;
     font-size: 34px;
 }
@@ -62,35 +62,39 @@ nav ul {
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin-right: 40px;
 }
 
 
-nav li a{
+nav li a {
     text-decoration: none;
     font-size: 18px;
 }
 
 
 /* section design */
-.section-title{
+.section-title {
     font-size: 30px;
     font-weight: bold;
     color: #181818;
 }
 
-.section-description{
+.section-description {
     font-size: 15px;
     color: #0d0c0c;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
 
 
 /* heading design */
-.heading1{
+.heading1 {
     display: flex;
     flex-direction: column;
     margin-top: 0;
@@ -110,10 +114,12 @@ nav li a{
 .banner {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Ensure alignment of items */
+    align-items: center;
+    /* Ensure alignment of items */
     margin: 0 27px 0 175px;
-    gap:10px; /* Add spacing between elements if needed */
-} 
+    gap: 10px;
+    /* Add spacing between elements if needed */
+}
 
 
 /* .banner-content{
@@ -129,32 +135,39 @@ nav li a{
 
 .banner-content {
     display: flex;
-    flex-direction: column; /* Arrange content vertically inside */
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align text to the left */
-    max-width: 40%; /* Restrict width to balance with image */
-    padding: 20px; /* Add padding for better spacing */
+    flex-direction: column;
+    /* Arrange content vertically inside */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: flex-start;
+    /* Align text to the left */
+    max-width: 40%;
+    /* Restrict width to balance with image */
+    padding: 20px;
+    /* Add padding for better spacing */
     /* border: 2px solid black; */
     gap: 10px;
-    box-sizing: border-box; /* Include padding and border in dimensions */
-    overflow: hidden; /* Prevent overflow */
+    box-sizing: border-box;
+    /* Include padding and border in dimensions */
+    overflow: hidden;
+    /* Prevent overflow */
 }
 
-.banner-greatings{
+.banner-greatings {
     font-size: 30px;
     font-weight: 456;
     margin: o o 2px o;
     border-collapse: collapse;
 }
 
-.banner-title{
+.banner-title {
     font-weight: bold;
     font-size: 50px;
     /* margin: 0; */
     /* border-collapse: collapse; */
 }
 
-.btn{
+.btn {
     display: flex;
     gap: 16px;
 }
@@ -186,21 +199,30 @@ nav li a{
 } */
 
 .banner-profile-picture {
-    max-width: 45%; /* Restrict width to balance with content */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure image fits within dimensions */
-    border-radius: 10px; /* Optional: add rounded corners for aesthetics */
+    max-width: 45%;
+    /* Restrict width to balance with content */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure image fits within dimensions */
+    border-radius: 10px;
+    /* Optional: add rounded corners for aesthetics */
 }
 
 
 /* main style */
-main{
+main {
     max-width: 866px;
-margin: 0 auto;
+    margin: 0 auto;
+}
+
+main section {
+    margin-top: 99px;
+    margin-bottom: 99px;
 }
 
 /* about style */
-.about{
+.about {
     border-radius: 10px;
     padding: 99px 114px;
     text-align: center;
@@ -208,17 +230,31 @@ margin: 0 auto;
 }
 
 
-.about-items{
+.about-items {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
 }
 
-.about-item{
-    margin-bottom: 1px
-    ;
+.about-item {
+    margin-bottom: 1px;
 }
 
-.item-description{
+.item-description {
     font-weight: 456px;
+}
+
+
+/* skills container style */
+
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.6);
 }
