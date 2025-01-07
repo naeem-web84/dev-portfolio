@@ -23,23 +23,32 @@
 .btn-primary {
     background-color: #FD6E0A;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
-    padding: 18px 35px;
-    border-radius: 5px;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
+
+/* Header style */
+.header{
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
 
 /* nav style */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 200px;
+    margin: 0 152px;
 }
 
 .nav-title{
-    font-weight: 800;
-    font-size: 45px;
+    font-weight: 608;
+    font-size: 34px;
 }
 
 nav ul {
@@ -49,12 +58,116 @@ nav ul {
 
 nav ul li{
     list-style: none;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 
 nav li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+
+
+/* heading design */
+.heading1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    /* gap: 2px; */
+}
+
+
+/* banner style */
+/* .banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 27px 0 175px;
+
+} */
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure alignment of items */
+    margin: 0 27px 0 175px;
+    gap:10px; /* Add spacing between elements if needed */
+} 
+
+
+/* .banner-content{
+    max-width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+} */
+
+.banner-content {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically inside */
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align text to the left */
+    max-width: 40%; /* Restrict width to balance with image */
+    padding: 20px; /* Add padding for better spacing */
+    /* border: 2px solid black; */
+    gap: 10px;
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.banner-greatings{
+    font-size: 30px;
+    font-weight: 456;
+    margin: o o 2px o;
+    border-collapse: collapse;
+}
+
+.banner-title{
+    font-weight: bold;
+    font-size: 50px;
+    /* margin: 0; */
+    /* border-collapse: collapse; */
+}
+
+.btn{
+    display: flex;
+    gap: 16px;
+}
+
+.btn-p1 {
+    background-color: #FD6E0A;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.btn-p2 {
+    background-color: #0ed4eaee;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(23, 13, 13);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px;
+}
+
+/* .banner-profile-picture{
+    width: 443px;
+    height: 513px;
+} */
+
+.banner-profile-picture {
+    max-width: 45%; /* Restrict width to balance with content */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure image fits within dimensions */
+    border-radius: 10px; /* Optional: add rounded corners for aesthetics */
+}
