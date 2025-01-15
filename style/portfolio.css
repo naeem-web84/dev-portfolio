@@ -261,40 +261,42 @@ main section {
 
 /* resume section style */
 
-.resume-container{
+.resume-container {
     display: flex;
     gap: 16px;
 }
 
 
-.experience-sub-title{
-font-size: 16px;
-font-weight: 456px;
-margin-bottom: 16px; 
+.experience-sub-title {
+    font-size: 16px;
+    font-weight: 456px;
+    margin-bottom: 16px;
 }
 
 
-.experience-description .experience-sub-title{
+.experience-description .experience-sub-title {
     color: #757575;
 }
 
-.resume-download-cv{
+.resume-download-cv {
     margin-top: 50px;
 }
 
 /* footer style */
-footer{
+footer {
     padding: 99px 174px;
     display: flex;
     gap: 76px;
 
 }
 
-.footer-colum{
+.footer-colum {
     width: 50%;
 }
 
-footer input[type="text"], footer input[type="email"], footer textarea{
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
     height: 48px;
     border-radius: 5px;
     background-color: white;
@@ -303,4 +305,87 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     padding: 7px 14px;
     margin-bottom: 18px;
     border: none;
+}
+
+/* Responsive Media Query */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header {
+        background-image: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-profile-picture {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        padding: 5px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 100%;
+        margin-right: 100px;
+    }
+
+    .btn {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-items {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skill {
+        padding: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .section-title {
+         margin-left: 10px;
+    }
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    footer {
+        gap: 26px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-colum {
+        width: 100%;
+    }
 }
